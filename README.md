@@ -24,9 +24,9 @@
 
 ` classname library `
 
-`  `
+` React icons `
 
-`  `
+` ...rest to handle passing through of additional unknown props `
 
 `  `
 
