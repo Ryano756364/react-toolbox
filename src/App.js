@@ -1,21 +1,16 @@
 import { VscGithubAlt, VscRocket } from "react-icons/vsc";
 import Button from './Button';
 
-function App(){
-  const onHandleClick = () => {
-    console.log('click');
-  };
-
-  return (
+function App(){return (
     <div>
       <div>
-        <Button primary rounded onClick={onHandleClick}>
+        <Button primary rounded>
           <VscGithubAlt />
           Click me
         </Button>
       </div>
       <div>
-        <Button secondary rounded onMouseEnter={onHandleClick}> {/* not best example but works */}
+        <Button secondary rounded>
         <VscRocket />
           Buy now!
         </Button>
