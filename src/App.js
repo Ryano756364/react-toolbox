@@ -1,35 +1,28 @@
-import { VscGithubAlt, VscRocket } from "react-icons/vsc";
-import Button from './Button';
+import ButtonPage from './pages/ButtonPage';
+import Accordion from './components/Accordion';
 
-function App(){return (
+function App(){
+  const items = [
+    {
+      id: 1,
+      label: 'Drop down #1',
+      content: 'Content #1'
+    },
+    {
+      id: 2,
+      label: 'Drop down #2',
+      content: 'Content #2'
+    },
+    {
+      id: 3,
+      label: 'Drop down #3',
+      content: 'Content #3'
+    }
+  ]
+
+  return (
     <div>
-      <div>
-        <Button primary rounded>
-          <VscGithubAlt />
-          Click me
-        </Button>
-      </div>
-      <div>
-        <Button secondary rounded>
-        <VscRocket />
-          Buy now!
-        </Button>
-      </div>
-      <div>
-        <Button success rounded>
-          Buy now!
-        </Button>
-      </div>
-      <div>
-        <Button warning rounded>
-          Buy now!
-        </Button>
-      </div>
-      <div>
-        <Button danger rounded outline>
-          Buy now!
-        </Button>
-      </div>
+      <Accordion items={items}/>
     </div>
   )
 }
